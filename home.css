@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 15px 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero Section with Animation */
+.hero {
+    height: 80vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide {
+    0% { background-image: url('https://source.unsplash.com/1600x800/?food'); }
+    33% { background-image: url('https://source.unsplash.com/1600x800/?restaurant'); }
+    66% { background-image: url('https://source.unsplash.com/1600x800/?fastfood'); }
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkred;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
